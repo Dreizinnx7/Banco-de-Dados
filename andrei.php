@@ -9,7 +9,7 @@ if(isset($_POST['cadastra'])){
 
     $sql = "INSERT INTO recados (nome, email, mensagem) VALUES ('$nome', '$email', '$msg')";
     mysqli_query($conexao, $sql) or die("Erro ao inserir dados: " . mysqli_error($conexao));
-    header("Location: mural.php");
+    header("Location: andrei.php");
     exit;
 }
 ?>
@@ -23,7 +23,7 @@ if(isset($_POST['cadastra'])){
 <script src="scripts/jquery.validate.js"></script>
 <script>
 $(document).ready(function() {
-    $("#mural").validate({
+    $("#andrei").validate({
         rules: {
             nome: { required: true, minlength: 4 },
             email: { required: true, email: true },

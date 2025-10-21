@@ -4,7 +4,7 @@
 $host    = "localhost";   // normalmente não precisa alterar
 $usuario = "root";        // substituir se seu usuário não for root
 $senha   = "";            // substituir se você tiver senha no MySQL
-$banco   = "andrei";       // substituir pelo nome do seu banco criado no phpMyAdmin
+$banco   = "mural";       // substituir pelo nome do seu banco criado no phpMyAdmin
 
 // Conexão MySQLi
 $conexao = mysqli_connect($host, $usuario, $senha, $banco);
@@ -23,7 +23,7 @@ if(isset($_POST['cadastra'])){
 
     $sql = "INSERT INTO recados (nome, email, mensagem) VALUES ('$nome', '$email', '$msg')";
     mysqli_query($conexao, $sql) or die("Erro ao inserir dados: " . mysqli_error($conexao));
-    header("Location: andrei.php");
+    header("Location: mural.php");
     exit;
 }
 ?>

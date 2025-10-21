@@ -1,3 +1,4 @@
+
 <?php
 include "conexao.php";
 
@@ -83,4 +84,3 @@ if(mysqli_num_rows($seleciona) <= 0){
 </div>
 </body>
 </html>
-
